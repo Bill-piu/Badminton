@@ -38,11 +38,13 @@ import socket
 import random
 import threading
 import uuid
+
 from datetime import datetime
 from urllib.parse import urlencode
+from io import BytesIO
 
 import qrcode
-from io import BytesIO
+from PIL import Image
 
 # --------------------------------------------------------------------------
 # CẤU HÌNH & LƯU TRỮ DỮ LIỆU (JSON file + lock để tránh ghi đè khi nhiều
